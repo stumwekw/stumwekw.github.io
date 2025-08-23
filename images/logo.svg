@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 120">
+  <!-- Background (optional, you can remove this if you want transparency) -->
+  <rect width="400" height="120" fill="white"/>
+
+  <!-- Pi Symbol -->
+  <text x="60" y="80" font-size="70" text-anchor="middle" fill="black" font-family="serif">π</text>
+
+  <!-- Site Name -->
+  <text x="140" y="80" font-size="40" fill="black" font-family="Arial, sans-serif">
+    Mathematics
+  </text>
+</svg>

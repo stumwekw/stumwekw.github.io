@@ -1,75 +1,68 @@
+---
+permalink: /teaching/
+title: Teaching — Deep Math
+layout: null
+---
 <!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Mathematics — Solomon Tumwekwase</title>
+  <title>Teaching — Mathematics</title>
 
-  <!-- Favicon: use your actual filenames; both links are fine -->
+  <!-- Favicon (same paths as index.html) -->
   <link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
-  <link rel="icon" href="/images/favicon.PNG" type="image/PNG" sizes="192x192">
+  <link rel="icon" href="/images/favicon.jpg" type="image/jpeg" sizes="192x192">
 
-  <meta name="description" content="Mathematics — notes and research." />
-  <meta property="og:title" content="Mathematics" />
-  <meta property="og:description" content="Mathematics — notes and research." />
-  <meta property="og:image" content="https://stumwekw.github.io/images/logo.svg" />
-  <meta name="twitter:card" content="summary_large_image" />
-
+  <meta name="description" content="Teaching — courses assisted, tutoring, and research assistantship." />
   <link rel="stylesheet" href="/styles.css" />
 </head>
 <body>
-  <!-- Title bar -->
+  <!-- Header -->
   <header class="site-header">
     <div class="container">
       <a class="brand" href="/" aria-label="Mathematics home">
-        <!-- Use your own logo.svg or logo.jpg -->
-            <img class="brand-logo" src="/images/logo.svg" alt="Mathematics logo" />
-            <span class="site-title">Mathematics</span>
+        <img class="brand-logo" src="/images/logo.svg" alt="Mathematics" />
+        <span class="site-title">Mathematcs</span>
       </a>
-      
-        <!-- Hamburger toggle (mobile) -->
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
-        <!-- three bars -->
+
+      <!-- Hamburger (mobile) -->
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor"/>
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor"/>
         </svg>
-        </button>
+      </button>
 
-        <!-- Primary nav -->
-        <nav class="site-nav" id="primary-nav" aria-label="Primary">
-            <a href="/">Home</a>
-            <a href="/research/">Research</a>
-            <a href="/teaching/">Teaching</a>
-            <a href="/Conferences/">Conferences</a>
-       </nav>
-
+      <!-- Nav -->
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/research/">Research</a>
+        <a href="/teaching/" aria-current="page">Teaching</a>
+        <a href="/Conferences/">Conferences</a>
+      </nav>
     </div>
   </header>
 
-  <!-- Full-width feature image -->
-<section class="feature" style="background-image: url('/images/solo.jpg');">
-  <div class="container typeset">
-    <!-- I can add a text here -->
-  </div>
-</section>
-
-
   <!-- Main -->
   <main class="container">
-    <section class="hero" id="home">
-      <h1>About me</h1>
+    <section class="hero" id="teaching">
+      <h1>Teaching</h1>
+
+      <h2 style="margin-top: 1.5rem;">Teaching Assistant at University of Houston</h2>
+      <ul>
+        <li> <strong>MATH 2413 Calculus I</strong> </em></li>
+        <li> <strong>MATH 2414 Calculus II</strong> </em></li>
+        <li> <strong>MATH 2305 Discrete MAthematics</strong> </em></li>
+        <li> <strong>MATH 3339 Statistics for sciences</strong> </em></li>
+        <li> <strong>CASA Tutorial Center</strong> </em></li>
+        <li> <strong>MATH 4364 Introduction to Numerical Analysis in Scientific Computing</strong> </em></li>
+      </ul>
+
+
+      <h2 style="margin-top: 1.5rem;">Contact</h2>
       <p>
-        I am a  Mathematics PhD candidate at  <a href="https://www.uh.edu/nsm/math/">University of Houston.</a> 
-        I am currently studying mathematical and computational methods for solving classication problems, with focus on detecting and classifying the mitral valve in medical images.
-      </p>
-       <hr>
-      <p>
-        My research interests include Scientific Machine learning for scientific computing, Numerical optimization and inverse problems and applications in medical image analysis. 
-        
-      </p>
-        <hr>
-      <p>
-        I am currently supervised by <a href="https://www.math.uh.edu/~andreas/">  Dr. Andreas Mang.</a> and <a href="https://www.math.uh.edu/~razencot/">  Dr. Robert Azencott.</a>
+        Office: Philip Gutherie Hoffman Hall (PGH) Office 605<br>
+        E-mail: <a href="mailto:stumwekw@cougarnet.uh.edu">stumwekw@cougarnet.uh.edu</a>
       </p>
     </section>
   </main>
@@ -101,16 +94,16 @@
     </div>
   </footer>
 
+  <!-- Mobile nav + year -->
   <script>
-    // Current year in footer
-    document.getElementById('year').textContent = new Date().getFullYear();
-
     const toggle = document.querySelector('.nav-toggle');
-  const root   = document.body;
-  toggle.addEventListener('click', () => {
-    const open = root.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
 </html>
