@@ -1,0 +1,84 @@
+---
+permalink: /conferences/
+title: Conferences — Mathematics
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Conferences — Solomon Tumwekwase</title>
+
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/favicon.png" type="image/png" sizes="192x192">
+
+  <meta name="description" content="Conferences and workshops attended or presented." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../" aria-label="Applied Math and Machine Learning home">
+        <img class="brand-logo" src="../images/logo.svg" alt="Mathematics logo" />
+        <span class="site-title">Applied Math and Machine Learning</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24"><path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor"/></svg>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../research/">Research</a>
+        <a href="../teaching/">Teaching</a>
+        <a href="../conferences/" aria-current="page">Conferences</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero" id="conferences">
+      <h1>Conferences & Workshops</h1>
+      <p>
+        I actively participate in conferences, workshops, and seminars that bridge applied mathematics,
+        machine learning, and scientific computing. These events provide opportunities to present research,
+        gain feedback, and collaborate with other researchers.
+      </p>
+
+      <h2 style="margin-top: 1.5rem;">Selected Participation</h2>
+      <ul>
+        <li><strong>CBMS Conference on Applied Mathematics & Machine Learning</strong> — Poster presentation and travel award recipient.</li>
+        <li><strong>Workshop on Bayesian Inverse Problems and Uncertainty Quantification</strong> — Contributed talk on inverse problems for dynamical systems.</li>
+        <li><strong>HPC/DSI Training Programs</strong> — Completed “Scientific Programming with Python 212” and earned digital badges.</li>
+      </ul>
+
+      <p style="margin-top: 1.5rem;">
+        More details and upcoming talks will be added here.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div class="icons" aria-label="Social links">
+        <a class="icon-btn" href="https://github.com/stumwekw" target="_blank" rel="noopener" aria-label="GitHub"><svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a12 12..."/></svg></a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/solomon-tumwekwase" target="_blank" rel="noopener" aria-label="LinkedIn"><svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5..."/></svg></a>
+        <a class="icon-btn" href="mailto:stumwekw@cougarnet.uh.edu" aria-label="Email"><svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6.5..."/></svg></a>
+      </div>
+      <div class="muted">© <span id="year"></span> Solomon</div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

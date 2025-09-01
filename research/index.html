@@ -1,0 +1,97 @@
+---
+permalink: /research/
+title: Research — Mathematics
+layout: null
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research — Solomon Tumwekwase</title>
+
+  <link rel="icon" href="../images/favicon.svg" type="image/svg+xml">
+  <link rel="icon" href="../images/favicon.png" type="image/png" sizes="192x192">
+
+  <meta name="description" content="Research — current work, interests, and publications." />
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="../" aria-label="Applied Math and Machine Learning home">
+        <img class="brand-logo" src="../images/logo.svg" alt="Mathematics logo" />
+        <span class="site-title">Applied Math and Machine Learning</span>
+      </a>
+
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor"/>
+        </svg>
+      </button>
+
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <a href="../">Home</a>
+        <a href="../research/" aria-current="page">Research</a>
+        <a href="../teaching/">Teaching</a>
+        <a href="../conferences/">Conferences</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main class="container">
+    <section class="hero" id="research">
+      <h1>Research</h1>
+      <p>
+        My research lies at the intersection of <strong>Applied Mathematics</strong> 
+        and <strong>machine learning</strong>, 
+        with a particular focus on applications in medical imaging.
+      </p>
+
+      <h2 style="margin-top: 1.5rem;">Current Projects</h2>
+      <ul>
+        <li>Classification of mitral valve structures in cardiac MRI using random forests and geometric features.</li>
+        <li>Bayesian parameter inference for nonlinear dynamical systems (FitzHugh–Nagumo model).</li>
+        <li>Uncertainty quantification and sensitivity analysis on high-dimensional medical data.</li>
+      </ul>
+
+      <h2 style="margin-top: 1.5rem;">Research Interests</h2>
+      <p>
+        Scientific machine learning for scientific computing, optimization and control of PDE/ODE systems,
+        tomographic inverse problems, and Riemannian geometry of covariance matrices.
+      </p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container foot">
+      <div class="icons" aria-label="Social links">
+        <a class="icon-btn" href="https://github.com/stumwekw" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5a12 12..."/></svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/solomon-tumwekwase" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M4.98 3.5a2.5..."/></svg>
+        </a>
+        <a class="icon-btn" href="mailto:stumwekw@cougarnet.uh.edu" aria-label="Email">
+          <svg class="icon" viewBox="0 0 24 24"><path fill="currentColor" d="M2 6.5A2.5..."/></svg>
+        </a>
+      </div>
+      <div class="muted">© <span id="year"></span> Solomon</div>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.nav-toggle');
+    if (toggle) {
+      toggle.addEventListener('click', () => {
+        const open = document.body.classList.toggle('nav-open');
+        toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+      });
+    }
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
