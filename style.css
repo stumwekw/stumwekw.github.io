@@ -179,5 +179,11 @@ a {
 .icon { width: 22px; height: 22px; }
 .muted { color: var(--muted); font-size: 0.95rem; }
 
+.hero-photo {
+  max-width: 100%;   /* scales down to fit container width */
+  height: auto;      /* keeps aspect ratio */
+  display: block;    /* remove inline spacing */
+  margin: 20px auto; /* center horizontally + space around */
+}
 
 
