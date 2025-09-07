@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Applied Math/Machine learning — Solomon Tumwekwase</title>
 
-  <!-- Favicon: use your actual filenames; both links are fine -->
+  <!-- Favicon -->
   <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
   <link rel="icon" href="images/favicon.png" type="image/png" sizes="192x192">
 
@@ -18,58 +18,88 @@
 
   <link rel="stylesheet" href="style.css?v=2" />
 
+  <style>
+    /* Watermark text at the very top */
+    .watermark {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: rgba(0,0,0,0.08); /* light, watermark-style */
+      pointer-events: none; /* don’t block clicks */
+      z-index: 0;
+      user-select: none;
+    }
+
+    /* Adjust container so it doesn’t overlap watermark */
+    body {
+      margin: 0;
+      font-family: 'Georgia', serif;
+    }
+
+    .site-header {
+      margin-top: 60px; /* pushes header down below watermark */
+      position: relative;
+      z-index: 1;
+    }
+
+    .brand-logo {
+      margin-top: 10px; /* slight spacing below watermark */
+      max-height: 80px;
+    }
+  </style>
 </head>
 <body>
+  <!-- Watermark -->
+  <div class="watermark">Solomon Tumwekwase</div>
+
   <!-- Title bar -->
   <header class="site-header">
     <div class="container">
       <a class="brand" href="/" aria-label="Applied Math and Machine Learning home">
-        <!-- Use your own logo.svg or logo.jpg -->
-            <img class="brand-logo" src="images/logo.svg" alt="Mathematics logo" />
-            <span class="site-title">Applied Math and Machine Learing</span>
+        <img class="brand-logo" src="images/logo.png" alt="My photo" />
+        <span class="site-title">Applied Math and Machine Learning</span>
       </a>
       
-        <!-- Hamburger toggle (mobile) -->
-        <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
-        <!-- three bars -->
+      <!-- Hamburger toggle (mobile) -->
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
         <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z" fill="currentColor"/>
+          <path fill="currentColor" d="M3 6h18v2H3zM3 11h18v2H3zM3 16h18v2H3z"/>
         </svg>
-        </button>
+      </button>
 
-        <!-- Primary nav -->
-        <nav class="site-nav" id="primary-nav" aria-label="Primary">
-            <a href="/">Home</a>
-            <a href="/research/">Research</a>
-            <a href="/workexperience/">Work Experience</a>
-            <a href="/conferences/">Conferences</a>
-       </nav>
-
+      <!-- Primary nav -->
+      <nav class="site-nav" id="primary-nav" aria-label="Primary">
+        <a href="/">Home</a>
+        <a href="/research/">Research</a>
+        <a href="/workexperience/">Work Experience</a>
+        <a href="/conferences/">Conferences</a>
+      </nav>
     </div>
   </header>
 
   <!-- Full-width feature image -->
-<section class="feature" style="background-image: url('images/soloz.jpg');">
-  <div class="container typeset">
-    <!-- I can add a text here -->
-  </div>
-</section>
-
+  <section class="feature" style="background-image: url('images/soloz.jpg');">
+    <div class="container typeset">
+      <!-- Optional text here -->
+    </div>
+  </section>
 
   <!-- Main -->
   <main class="container">
     <section class="hero" id="home">
       <p>
-        I'm a  Mathematics PhD candidate at the <a href="https://www.uh.edu/nsm/math/">University of Houston.</a> 
-        I have strong interest in connecting mathematical theory with practical applications, especially in the medical field and scientic computing.
+        I'm a Mathematics PhD candidate at the <a href="https://www.uh.edu/nsm/math/">University of Houston.</a> 
+        I have strong interest in connecting mathematical theory with practical applications, especially in the medical field and scientific computing.
       </p>
-       
       <p>
         My research interests are in applying machine learning algorithms to solve problems, Image Analysis, Numerical Optimization, Scientific computing and numerical methods.
       </p>
-        
       <p>
-        I am  currently supervised by <a href="https://www.math.uh.edu/~andreas/">  Dr. Andreas Mang.</a> and <a href="https://www.math.uh.edu/~razencot/">  Dr. Robert Azencott
+        I am currently supervised by <a href="https://www.math.uh.edu/~andreas/">Dr. Andreas Mang</a> and <a href="https://www.math.uh.edu/~razencot/">Dr. Robert Azencott</a>.
       </p>
     </section>
   </main>
@@ -93,7 +123,7 @@
         <!-- Email -->
         <a class="icon-btn" href="mailto:stumwekw@cougarnet.uh.edu" aria-label="Email">
           <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-            <path fill="currentColor" d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 19.5 20h-15A2.5 2.5 0 0 1 2 17.5v-11Zm2.4-.5 7.1 5.15L18.6 6H4.4Zm15.1 2.3-7.2 5.22a1.5 1.5 0 0 1-1.8 0L3.3 8.3V17.5c0 .28.22.5.5.5h16.4c.28 0 .5-.22.5-.5V8.3Z"/>
+            <path fill="currentColor" d="M2 6.5A2.5 2.5 0 0 1 4.5 4h15A2.5 2.5 0 0 1 22 6.5v11A2.5 2.5 0 0 1 0 17.5v-11Zm2.4-.5 7.1 5.15L18.6 6H4.4Zm15.1 2.3-7.2 5.22a1.5 1.5 0 0 1-1.8 0L3.3 8.3V17.5c0 .28.22.5.5.5h16.4c.28 0 .5-0.22.5-0.5V8.3Z"/>
           </svg>
         </a>
       </div>
@@ -106,11 +136,11 @@
     document.getElementById('year').textContent = new Date().getFullYear();
 
     const toggle = document.querySelector('.nav-toggle');
-  const root   = document.body;
-  toggle.addEventListener('click', () => {
-    const open = root.classList.toggle('nav-open');
-    toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
-  });
+    const root   = document.body;
+    toggle.addEventListener('click', () => {
+      const open = root.classList.toggle('nav-open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
   </script>
 </body>
 </html>
