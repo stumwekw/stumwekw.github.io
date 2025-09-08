@@ -186,7 +186,7 @@ a {
   margin: 20px auto; /* center horizontally + space around */
 }
 .hero-photo {
-  max-width: 400px;   /* maximum width in pixels */
+  max-width: 200px;   /* maximum width in pixels */
   height: auto;       /* keeps correct aspect ratio */
   display: block;
   margin: 20px auto;  /* centers image horizontally */
