@@ -185,5 +185,11 @@ a {
   display: block;    /* remove inline spacing */
   margin: 20px auto; /* center horizontally + space around */
 }
-
+.hero-photo {
+  max-width: 400px;   /* maximum width in pixels */
+  height: auto;       /* keeps correct aspect ratio */
+  display: block;
+  margin: 20px auto;  /* centers image horizontally */
+  border-radius: 8px; /* optional: rounded corners */
+}
 
