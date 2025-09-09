@@ -180,35 +180,49 @@ a {
 .muted { color: var(--muted); font-size: 0.95rem; }
 
 
+/* Feature row: text left, photo right */
 .feature {
-  padding: 40px 0;
+  padding: 32px 0;
 }
 
 .feature-content {
   display: flex;
-  align-items: center;       /* vertically align text + photo */
+  align-items: center;           /* vertical alignment */
   justify-content: space-between;
-  gap: 40px;                 /* space between text and photo */
+  gap: 32px;                     /* space between text and photo */
 }
 
 .feature-text {
-  flex: 1;
-  font-size: 1.1rem;
-  line-height: 1.6;
+  flex: 1;                       /* take remaining width */
+  font-size: 1.05rem;
+  line-height: 1.65;
 }
 
+/* Keep the photo a fixed, neat size on the right */
 .feature-photo {
-  flex-shrink: 0;            /* don’t let photo shrink */
+  flex: 0 0 auto;                /* don't stretch */
+  margin-left: auto;             /* push to the right edge */
 }
 
+/* Circular profile image */
 .hero-photo {
-  max-width: 200px;    /* controls size → reduce to 150px or 100px for smaller */
-  height: auto;        /* keep aspect ratio */
-  display: block;      
-  margin: 20px auto;   /* centers the photo */
-  border-radius: 50%;  /* makes the image circular */
-  object-fit: cover;   /* ensures it fills the circle nicely */
-  border: 3px solid #333; /* optional: border around the circle */
+  width: 200px;                  /* adjust size as you like */
+  height: 200px;                 /* same as width for a perfect circle */
+  border-radius: 50%;
+  object-fit: cover;             /* fill the circle nicely */
+  display: block;
 }
 
-
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .feature-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .feature-photo {
+    margin-left: 0;
+  }
+  .hero-photo {
+    margin: 8px auto 0;          /* center the image on mobile */
+  }
+}
