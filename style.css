@@ -180,16 +180,13 @@ a {
 .muted { color: var(--muted); font-size: 0.95rem; }
 
 .hero-photo {
-  max-width: 100%;   /* scales down to fit container width */
-  height: auto;      /* keeps aspect ratio */
-  display: block;    /* remove inline spacing */
-  margin: 20px auto; /* center horizontally + space around */
+  max-width: 200px;    /* controls size → reduce to 150px or 100px for smaller */
+  height: auto;        /* keep aspect ratio */
+  display: block;      
+  margin: 20px auto;   /* centers the photo */
+  border-radius: 50%;  /* makes the image circular */
+  object-fit: cover;   /* ensures it fills the circle nicely */
+  border: 3px solid #333; /* optional: border around the circle */
 }
-.hero-photo {
-  max-width: 200px;   /* maximum width in pixels */
-  height: auto;       /* keeps correct aspect ratio */
-  display: block;
-  margin: 20px auto;  /* centers image horizontally */
-  border-radius: 8px; /* optional: rounded corners */
-}
+
 
