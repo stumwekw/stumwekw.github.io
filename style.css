@@ -180,7 +180,7 @@ a {
 .muted { color: var(--muted); font-size: 0.95rem; }
 
 .hero-photo {
-  max-width: 200px;    /* controls size → reduce to 150px or 100px for smaller */
+  max-width: 300px;    /* controls size → reduce to 150px or 100px for smaller */
   height: auto;        /* keep aspect ratio */
   display: block;      
   margin: 20px auto;   /* centers the photo */
