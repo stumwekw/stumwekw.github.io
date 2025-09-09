@@ -179,6 +179,28 @@ a {
 .icon { width: 22px; height: 22px; }
 .muted { color: var(--muted); font-size: 0.95rem; }
 
+
+.feature {
+  padding: 40px 0;
+}
+
+.feature-content {
+  display: flex;
+  align-items: center;       /* vertically align text + photo */
+  justify-content: space-between;
+  gap: 40px;                 /* space between text and photo */
+}
+
+.feature-text {
+  flex: 1;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.feature-photo {
+  flex-shrink: 0;            /* don’t let photo shrink */
+}
+
 .hero-photo {
   max-width: 300px;    /* controls size → reduce to 150px or 100px for smaller */
   height: auto;        /* keep aspect ratio */
