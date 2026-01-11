@@ -179,18 +179,19 @@ a {
 .icon { width: 22px; height: 22px; }
 .muted { color: var(--muted); font-size: 0.95rem; }
 
-.profile-photo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.profile-photo .container {
+  text-align: center;
   padding: 40px 0;
 }
 
 .profile-photo img {
-  width: 600px;        /* adjust size here */
-  max-width: 90%;      /* responsive on mobile */
+  display: block;
+  margin: 0 auto;     /* this centers it in the container */
+  width: 700px;       /* pick your size */
+  max-width: 100%;    /* keeps it responsive */
   height: auto;
 }
+
 
 
 
