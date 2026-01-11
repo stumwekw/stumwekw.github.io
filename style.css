@@ -179,14 +179,18 @@ a {
 .icon { width: 22px; height: 22px; }
 .muted { color: var(--muted); font-size: 0.95rem; }
 
-.hero-photo {
-  max-width: 200px;    /* controls size → reduce to 150px or 100px for smaller */
-  height: auto;        /* keep aspect ratio */
-  display: block;      
-  margin: 20px auto;   /* centers the photo */
-  border-radius: 50%;  /* makes the image circular */
-  object-fit: cover;   /* ensures it fills the circle nicely */
-  border: 3px solid #333; /* optional: border around the circle */
+.profile-photo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
 }
+
+.profile-photo img {
+  width: 600px;        /* adjust size here */
+  max-width: 90%;      /* responsive on mobile */
+  height: auto;
+}
+
 
 
